@@ -1,10 +1,11 @@
+fms_version = 'v0.1.0';
 
 %% Constant Variable (for internal use)
 FMS_CONST.dt = 0.004;
 
 %% Exported Value 
 FMS_EXPORT_VALUE.period = uint32(FMS_CONST.dt*1e3);
-FMS_EXPORT_VALUE.model_info = int8(['Base FMS', 0]); % 0 for end of string
+FMS_EXPORT_VALUE.model_info = int8(['Base FMS ',fms_version, 0]); % 0 for end of string
 
 FMS_EXPORT = Simulink.Parameter(FMS_EXPORT_VALUE);
 FMS_EXPORT.CoderInfo.StorageClass = 'ExportedGlobal';
