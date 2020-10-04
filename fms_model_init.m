@@ -1,4 +1,4 @@
-fms_version = 'v0.1.1';
+fms_version = 'v0.1.2';
 
 %% Constant Variable (for internal use)
 FMS_CONST.dt = 0.004;
